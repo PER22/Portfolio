@@ -4,5 +4,15 @@ body {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-attachment: fixed;
+
+  padding: 15px;
 }
+
+p, h1 {
+  background-color: rgba(176, 208, 233, 0.75);
+
+  padding: .75em;
+  border-radius: 1em;
+}
+
 
