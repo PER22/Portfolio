@@ -43,4 +43,4 @@ nav {
   font-size: 28px;
 }
 
-a:visited{text-decoration: none;;}
+:any-link{text-decoration: none;color: aliceblue;}
