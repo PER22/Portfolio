@@ -2,7 +2,7 @@ body {
   background-image: url("./assets/images/widenature.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0%;
   background-attachment: fixed;
 
   padding: 15px;
