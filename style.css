@@ -5,14 +5,19 @@ body {
   background-position: 0%;
   background-attachment: fixed;
   text-decoration: none;
-  padding: 15px;
+
+  padding: 0em 2em;
+  color: white;
 }
 
-p,h1,ul {
-  background-color: rgba(176, 208, 233, 0.75);
+p,
+h1,
+ul {
+  background-color: rgba(117, 135, 149, 0.75);
   font-size: 20px;
   padding: .75em;
   border-radius: 1em;
+
 }
 
 nav {
@@ -26,7 +31,7 @@ nav {
 }
 
 
-.show-nav{
+.show-nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -35,12 +40,58 @@ nav {
 
 .menu-logo {
   height: 3em;
-  cursor: pointer;
 }
 
-.show-nav a{
-  padding: 1em;
+.show-nav a {
+  padding: 0em 1em;
   font-size: 28px;
 }
 
-:any-link{text-decoration: none;color: aliceblue;}
+:any-link {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+
+.portfolio-container {
+
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.project-container {
+  background-color:rgba(117, 135, 149, 0.75);
+  border-radius: 2em;
+  margin: 1em;
+  padding: 1em;
+  height: 20em;
+  border-radius: 1em;;
+}
+
+#frog-project{
+  background-image: url("./assets/images/Frog_on_palm_frond.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#clock-project{
+  background-image: url("./assets/images/clocks.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#drone-project{
+  background-image: url("./assets/images/drone.jpeg");
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#printing-project{
+  background-image: url("./assets/images/3dPrinter.jpg");
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
