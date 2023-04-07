@@ -15,4 +15,9 @@ window.addEventListener('scroll', () => {
     body.style.backgroundPositionX = `${scrollPercentage}%`;
 });
 
+document.querySelector(".floating-background-change-icon").addEventListener("click",
+    (event)=> {
+        document.body.classList.toggle("second-bg-image");
+    }
 
+);
