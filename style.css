@@ -118,11 +118,12 @@ nav {
 
 .floating-background-change-icon {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-
+  bottom: 50px;
+  right: 100px;
   background-color: rgb(255, 149, 0);
   z-index: 2;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 
