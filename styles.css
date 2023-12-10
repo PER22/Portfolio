@@ -281,19 +281,6 @@ nav ul li a {
 }
 
 
-@media screen and (max-width: 640px) {
-  /* Mobile view */
-  .hamburger-menu {
-      display: block;
-  }
-
-  nav ul {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-  }
-}
-
 .additional-content {
   display: none;
 }
