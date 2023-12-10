@@ -5,207 +5,264 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padraic Reilly - Professional Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header class="header-card">
+    <div class="content-container">
         <nav aria-label="Main navigation">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a id="about-link" href="#about">About</a></li>
+                <li><a id="projects-link" href="#projects">Projects</a></li>
+                <li><a id="contact-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <h1>Padraic Reilly</h1>
-        <p>Software Engineer</p>
-    </header>
+        <header class="header-card card">
+            <img id="profile-picture" src="" alt="Profile picture">
+            <h1 id="name">Padraic Reilly</h1>
+            <p id="jobtitle">Software Engineer</p>
+            <p id="github-bio"></p>
+            <a class="social-media-link" target="_blank" href="https://linkedin.com/in/padraic-reilly"><img
+                    class="social-media-logo" src="./assets/logos/linkedin_logo.png"></a>
+            <a class="social-media-link" target="_blank" href="https://github.com/PER22"><img class="social-media-logo"
+                    src="./assets/logos/github_logo.png"></a>
+            <a class="social-media-link" target="_blank" href="./assets/resume/PadraicReilly_FastTrack_Resume.pdf"
+                target="_blank" download="PadraicReilly_FastTrack_Resume.pdf"><img class="social-media-logo"
+                    src="./assets/logos/resume_logo.png"></a>
 
-    <main>
-        <section id="about" class="about-card">
-            <h2>About Me</h2>
-            <article>
-                <p>Brief introduction...</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cupiditate quas quam
-                    consequuntur asperiores, corporis, culpa nihil eius odio explicabo sapiente enim fugiat quidem
-                    obcaecati optio quibusdam nostrum, reiciendis rerum! Lorem ipsum dolor sit amet consectetur,
-                    adipisicing elit. Eius amet asperiores dolor expedita repudiandae officia deleniti, maxime deserunt
-                    molestias delectus, excepturi pariatur illum mollitia nemo impedit aut veritatis nostrum cum?</p>
-            </article>
-        </section>
-        
+        </header>
+        <main>
+            <section id="about" class="about-card card">
+                <h2>About Me</h2>
+                <article>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cupiditate quas quam
+                        consequuntur asperiores, corporis, culpa nihil eius odio explicabo sapiente enim fugiat quidem
+                        obcaecati optio quibusdam nostrum, reiciendis rerum! Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Eius amet asperiores dolor expedita repudiandae officia deleniti, maxime
+                        deserunt
+                        molestias delectus, excepturi pariatur illum mollitia nemo impedit aut veritatis nostrum cum?
+                    </p>
+                </article>
+            </section>
 
-        <section id="projects">
-            <h2>My Projects</h2>
-            <article class="project-card">
-                <h3 class="project-title">Project Title 1</h3>
-                <img class="project-img">
-                <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas veniam
-                    suscipit unde facere perspiciatis quam nam labore, culpa natus optio voluptatibus delectus molestiae
-                    quo autem animi qui ullam distinctio itaque.</p>
-                <a class="link-to-project" href="/">Link to project</a>
-            </article>
-            <article class="project-card">
-                <h3 class="project-title">Project Title 2</h3>
-                <img class="project-img">
-                <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem incidunt
-                    corrupti eos recusandae possimus laboriosam dolores reprehenderit dolorum praesentium iure
-                    molestias, doloremque excepturi voluptatem cumque, neque alias harum inventore! Sed.</p>
-                <a class="link-to-project" href="/">Link to project</a>
-            </article>
-            <article class="project-card">
-                <h3 class="project-title">Project Title 3</h3>
-                <img class="project-img">
-                <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
-                    dolore quod facilis aliquid a odio voluptate aspernatur! Sequi debitis, molestiae recusandae, autem
-                    enim provident, error amet labore voluptatum tempora rem!</p>
-                <a class="link-to-project" href="/">Link to project</a>
-            </article>
-            <article class="project-card">
-                <h3 class="project-title">Project Title 4</h3>
-                <img class="project-img">
-                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quia
-                    officiis, consequuntur iusto laborum odio et? Voluptatibus dolorum perferendis magni, sapiente quasi
-                    odio quaerat culpa eveniet quod excepturi, suscipit iusto.</p>
-                <a class="link-to-project" href="/">Link to project</a>
-            </article>
-        </section>
 
-        <section id="skills">
-            <h2>My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skills-wrapper">
-                        <div class="skill">
-                            <img class="skill-icon" src="./assets/logos/html_logo.png" alt="HTML5">
-                            <div class="skill-label">HTML5</div>
+            <section id="projects">
+
+
+
+                <article class="project-card card">
+                    <h3 class="project-title">Project: Mock Twitter API <a class="link-to-project" href="/"><img
+                                src="./assets/icons/newtab_icon.png"></a></h3>
+
+                    <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+                        incidunt
+                        corrupti eos recusandae possimus laboriosam dolores reprehenderit dolorum praesentium iure
+                        molestias, doloremque excepturi voluptatem cumque, neque alias harum inventore! Sed.</p>
+                </article>
+
+
+                <article class="project-card card">
+                    <h3 class="project-title">Project: The-Howling-Infinite.com
+                        <a class="link-to-project" href="https://www.the-howling-infinite.com/">
+                            <img src="./assets/icons/newtab_icon.png">
+                        </a>
+                    </h3>
+
+                    <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+                        incidunt
+                        corrupti eos recusandae possimus laboriosam dolores reprehenderit dolorum praesentium iure
+                        molestias, doloremque excepturi voluptatem cumque, neque alias harum inventore! Sed.</p>
+                </article>
+
+                <article class="project-card card">
+                    <h3 class="project-title">Project: SimpFi.ai
+                        <a class="link-to-project" href="https://alpha.simpfi.ai/" target="_blank">
+                            <img src="./assets/icons/newtab_icon.png">
+                        </a>
+                    </h3>
+
+                    <p class="project-description">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Quas veniam
+                        suscipit unde facere perspiciatis quam nam labore, culpa natus optio voluptatibus delectus
+                        molestiae
+                        quo autem animi qui ullam distinctio itaque.</p>
+                </article>
+
+                <article class="project-card card">
+                    <h3 class="project-title">Project: FlowBoard
+                        <a class="link-to-project" target="_blank" href="https://dry-pine-9148.fly.dev/"
+                            target="_blank">
+                            <img src="./assets/icons/newtab_icon.png"></a>
+                    </h3>
+
+                    <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
+                        dolore quod facilis aliquid a odio voluptate aspernatur! Sequi debitis, molestiae recusandae,
+                        autem
+                        enim provident, error amet labore voluptatum tempora rem!</p>
+                </article>
+
+                <article class="project-card card">
+                    <h3 class="project-title">Project: Blogolio
+                        <a href="https://blogfolio-64506ccbfc71.herokuapp.com/" target="_blank" class="link-to-project">
+                            <img src="./assets/icons/newtab_icon.png">
+                        </a>
+                    </h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quia
+                        officiis, consequuntur iusto laborum odio et? Voluptatibus dolorum perferendis magni, sapiente
+                        quasi
+                        odio quaerat culpa eveniet quod excepturi, suscipit iusto.</p>
+
+                </article>
+
+                <article class="project-card card">
+                    <h3 class="project-title">Project: Tetris in C
+                        <a href="https://github.com/PER22/Tetris" target="_blank" class="link-to-project">
+                            <img src="./assets/icons/newtab_icon.png">
+                        </a>
+                    </h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quia
+                        officiis, consequuntur iusto laborum odio et? Voluptatibus dolorum perferendis magni, sapiente
+                        quasi
+                        odio quaerat culpa eveniet quod excepturi, suscipit iusto.</p>
+
+                </article>
+            </section>
+
+            <section id="skills">
+                <div class="skills-grid">
+                    <div class="skill-category card">
+                        <h3>Frontend Skills</h3>
+                        <div class="skills-wrapper">
+                            <div class="skill">
+                                <img class="skill-icon" src="./assets/logos/html_logo.png" alt="HTML5">
+                                <div class="skill-label">HTML5</div>
+                            </div>
+                            <div class="skill">
+                                <img class="skill-icon" src="./assets/logos/css_logo.png" alt="CSS3">
+                                <div class="skill-label">CSS3</div>
+                            </div>
+                            <div class="skill">
+                                <img class="skill-icon" src="./assets/logos/javascript_logo.png" alt="JavaScript">
+                                <div class="skill-label">JavaScript</div>
+                            </div>
+                            <div class="skill">
+                                <img class="skill-icon" src="./assets/logos/react_logo.png" alt="React.js">
+                                <div class="skill-label">React.js</div>
+                            </div>
+                            <div class="skill">
+                                <img class="skill-icon" src="./assets/logos/angular_logo.png" alt="Angular.js">
+                                <div class="skill-label">Angular.js</div>
+                            </div>
+                            <div class="skill">
+                                <img class="skill-icon" src="./assets/logos/ejs_logo.svg" alt="EJS">
+                                <div class="skill-label">EJS</div>
+                            </div>
                         </div>
-                        <div class="skill">
-                            <img class="skill-icon" src="./assets/logos/css_logo.png" alt="CSS3">
-                            <div class="skill-label">CSS3</div>
+                    </div>
+
+
+
+                    <div class="skill-category card">
+                        <h3>Backend Skills</h3>
+                        <div class="skills-wrapper">
+                            <div class="skill">
+                                <img class="skill-icon" src="./assets/logos/java_logo.png" alt="Java">
+                                <div class="skill-label">Java</div>
+                            </div>
+                            <div class="skill">
+                                <img class="skill-icon" src="./assets/logos/spring_logo.svg" alt="Spring">
+                                <div class="skill-label">Spring</div>
+                            </div>
+                            <div class="skill">
+                                <img class="skill-icon" src="./assets/logos/lombok_logo.png" alt="Lombok">
+                                <div class="skill-label">Lombok</div>
+                            </div>
+                            <div class="skill">
+                                <img class="skill-icon" src="./assets/logos/mapstruct_logo.png" alt="Mapstruct">
+                                <div class="skill-label">Mapstruct</div>
+                            </div>
+                            <div class="skill">
+                                <img class="skill-icon" src="./assets/logos/node_logo.png" alt="Node.js">
+                                <div class="skill-label">Node.js</div>
+                            </div>
+                            <div class="skill">
+                                <img class="skill-icon" src="./assets/logos/express_logo.png" alt="Express.js">
+                                <div class="skill-label">Express.js</div>
+                            </div>
+
                         </div>
-                        <div class="skill">
-                            <img class="skill-icon" src="./assets/logos/javascript_logo.png" alt="JavaScript">
-                            <div class="skill-label">JavaScript</div>
+                    </div>
+
+
+                    <div class="skill-category card">
+                        <h3>Database Skills</h3>
+                        <div class="skills-wrapper">
+                            <div class="skill">
+                                <img class="skill-icon" src="./assets/logos/postgresql_logo.png" alt="PostgreSQL">
+                                <div>PostgreSQL</div>
+                            </div>
+                            <div class="skill">
+                                <img class="skill-icon" src="./assets/logos/jpa_logo.webp" alt="JPA ORM">
+                                <div>JPA ORM</div>
+                            </div>
+                            <div class="skill">
+                                <img class="skill-icon" src="./assets/logos/mongo_logo.png" alt="MongoDB">
+                                <div>MongoDB</div>
+                            </div>
+                            <div class="skill">
+                                <img class="skill-icon" src="./assets/logos/mongoose_logo.png" alt="Mongoose ODM">
+                                <div>Mongoose ODM</div>
+                            </div>
+
                         </div>
-                        <div class="skill">
-                            <img class="skill-icon" src="./assets/logos/react_logo.png" alt="React.js">
-                            <div class="skill-label">React.js</div>
-                        </div>
-                        <div class="skill">
-                            <img class="skill-icon" src="./assets/logos/angular_logo.png" alt="Angular.js">
-                            <div class="skill-label">Angular.js</div>
-                        </div>
-                        <div class="skill">
-                            <img class="skill-icon" src="./assets/logos/ejs_logo.svg" alt="EJS">
-                            <div class="skill-label">EJS</div>
+                    </div>
+
+
+                    <div class="skill-category card">
+                        <h3>Other Skills</h3>
+                        <div class="skills-wrapper">
+                            <div class="skill">
+                                <img class="skill-icon" src="./assets/logos/s3_logo.png" alt="AWS S3">
+                                <div>AWS S3</div>
+                            </div>
+                            <div class="skill">
+                                <img class="skill-icon" src="./assets/logos/heroku_logo.png" alt="Heroku">
+                                <div>Heroku</div>
+                            </div>
+                            <div class="skill">
+                                <img class="skill-icon" src="./assets/logos/githubcat_logo.png" alt="GitHub">
+                                <div>GitHub</div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
 
-                <!-- Backend Technologies -->
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skills-wrapper">
-                        <div class="skill">
-                            <img class="skill-icon" src="./assets/logos/java_logo.png" alt="Java">
-                            <div class="skill-label">Java</div>
-                        </div>
-                        <div class="skill">
-                            <img class="skill-icon" src="./assets/logos/spring_logo.svg" alt="Spring">
-                            <div class="skill-label">Spring</div>
-                        </div>
-                        <div class="skill">
-                            <img class="skill-icon" src="./assets/logos/lombok_logo.png" alt="Lombok">
-                            <div class="skill-label">Lombok</div>
-                        </div>
-                        <div class="skill">
-                            <img class="skill-icon" src="./assets/logos/mapstruct_logo.png" alt="Mapstruct">
-                            <div class="skill-label">Mapstruct</div>
-                        </div>
-                        <div class="skill">
-                            <img class="skill-icon" src="./assets/logos/node_logo.png" alt="Node.js">
-                            <div class="skill-label">Node.js</div>
-                        </div>
-                        <div class="skill">
-                            <img class="skill-icon" src="./assets/logos/express_logo.png" alt="Express.js">
-                            <div class="skill-label">Express.js</div>
-                        </div>
-                        
-                    </div>
-                </div>
+            <section id="contact" class="contact-card card">
+                <h2>Contact Me</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-                <!-- Database Technologies -->
-                <div class="skill-category">
-                    <h3>Database</h3>
-                    <div class="skills-wrapper">
-                        <div class="skill">
-                            <img class="skill-icon" src="./assets/logos/postgresql_logo.png" alt="PostgreSQL">
-                            <div>PostgreSQL</div>
-                        </div>
-                        <div class="skill">
-                            <img class="skill-icon" src="./assets/logos/mongo_logo.png" alt="MongoDB">
-                            <div>MongoDB</div>
-                        </div>
-                        <div class="skill">
-                            <img class="skill-icon" src="./assets/logos/mongoose_logo.png" alt="Mongoose ODM">
-                            <div>Mongoose ODM</div>
-                        </div>
-                    </div>
-                </div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-                <!-- Other Technologies -->
-                <div class="skill-category">
-                    <h3>Other Technologies</h3>
-                    <div class="skills-wrapper">
-                        <div class="skill">
-                            <img class="skill-icon" src="./assets/logos/s3_logo.png" alt="AWS S3">
-                            <div>AWS S3</div>
-                        </div>
-                        <div class="skill">
-                            <img class="skill-icon" src="./assets/logos/heroku_logo.png" alt="Heroku">
-                            <div>Heroku</div>
-                        </div>
-                        <div class="skill">
-                            <img class="skill-icon" src="./assets/logos/githubcat_logo.png" alt="GitHub">
-                            <div>GitHub</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
 
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form action="submit_form.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+        <footer>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <p id="copyright-notice">Copyright © Padraic Reilly 2023. All rights reserved.</p>
+        </footer>
+    </div>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <ul>
-            <li><a href="https://linkedin.com/in/padraic-reilly"><img class="social-media-logo"
-                        src="./assets/images/linkedin_logo.png"> Connect with me on LinkedIn</a></li>
-            <li><a href="https://github.com/PER22"><img class="social-media-logo"
-                        src="./assets/images/github_logo.png">Find me on GitHub</a></li>
-        </ul>
-        <p id="copyright-notice">Copyright © Padraic Reilly 2023. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
 </body>
 
 </html>
