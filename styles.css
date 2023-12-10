@@ -235,7 +235,7 @@ html {
 
 /* Style the submit button */
 .contact-card button[type="submit"] {
-  background-color: #D96D55;
+  background-image: linear-gradient(#D67458, #8E4641);
   box-shadow: 1px 1px 3px  rgba(0,0,0,.3); 
   color: white; 
   padding: 10px 15px; 
