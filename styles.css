@@ -7,6 +7,9 @@
     padding: 20px;
   }
 }
+.body{
+  background-color: black;
+}
 
 .social-media-logo {
   height: 1.5rem;
