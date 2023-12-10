@@ -317,30 +317,3 @@ nav ul li a {
 }
 
 
-body {
-  /* Other styles */
-  position: relative; /* Ensure the body is positioned */
-  margin: 0; /* Remove default margin */
-  overflow-x: hidden; /* Prevent horizontal scroll */
-}
-
-body::before {
-  content: '';
-  display: block;
-  position: fixed; /* Fixed position to mimic background-attachment: fixed */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1; /* Place it behind the content */
-  background: url('./assets/images/sunset-background.avif') center center / cover no-repeat fixed; 
-  /* This shorthand property combines background-position, background-size, and background-repeat */
-}
-
-/* Optional: Adjustments for iOS to ensure the fixed position is respected */
-@media screen and (max-device-width: 1024px) {
-  body::before {
-    position: -webkit-sticky; /* Specific to Safari and iOS browsers */
-    position: sticky;
-  }
-}
