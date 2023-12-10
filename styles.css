@@ -312,29 +312,13 @@ nav ul li a {
 
 
 
-/* Fixed background for tablet and mobile */
-@media all and (max-width: 1024px) {
-  body::after {
-    content: '';
-    width: 100vw; /* Use viewport width to allow horizontal scrolling */
-    height: 100vh; /* Use viewport height to cover the full height of the viewport */
-    background-image: url("./assets/images/sunset-background.avif");
-    background-position: center top; /* Align background to the top, allowing it to move horizontally */
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute; /* Changed to absolute to allow sideways scrolling */
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
+@media (max-width: 800px) {
   body {
-    background: none; /* Remove the background from the body to avoid duplication */
-  }
-}
-
-
-  .content-container {
-    position: relative;
-    z-index: 1;
+    background-image: 
+      linear-gradient(45deg, #ff0000, #ff7f00, #ffff00), /* Red to orange to yellow diagonal gradient */
+      linear-gradient(0deg, #0000ff, #8a2be2); /* Blue to purple vertical gradient */
+    /* Adjust the other background properties as needed */
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
