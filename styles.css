@@ -312,12 +312,16 @@ nav ul li a {
 
 
 
-@media (max-width: 800px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min--moz-device-pixel-ratio: 2), 
+only screen and (-o-min-device-pixel-ratio: 2/1), 
+only screen and (min-device-pixel-ratio: 2), 
+only screen and (min-resolution: 192dpi), 
+only screen and (min-resolution: 2dppx) {
   body {
     background-image: 
       linear-gradient(45deg, #ff0000, #ff7f00, #ffff00), /* Red to orange to yellow diagonal gradient */
       linear-gradient(0deg, #0000ff, #8a2be2); /* Blue to purple vertical gradient */
-    /* Adjust the other background properties as needed */
     background-repeat: no-repeat;
     background-size: cover;
   }
