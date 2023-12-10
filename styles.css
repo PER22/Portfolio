@@ -7,6 +7,9 @@
     padding: 20px;
   }
 }
+
+:root { background-attachment: fixed; }
+
 body{
   background-color: black;
 }
@@ -278,15 +281,6 @@ nav ul li a {
   background-color: rgb(68,45,67);
 }
 
-/* Hamburger Menu */
-.hamburger-menu {
-  display: none;
-  background-color: ;
-  border: none;
-  padding: 10px;
-  font-size: 20px;
-  cursor: pointer;
-}
 
 @media screen and (max-width: 640px) {
   /* Mobile view */
