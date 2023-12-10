@@ -235,7 +235,7 @@ html {
 
 /* Style the submit button */
 .contact-card button[type="submit"] {
-  background-color: rgb(226,146,96);
+  background-color: #D96D55;
   box-shadow: 1px 1px 3px  rgba(0,0,0,.3); 
   color: white; 
   padding: 10px 15px; 
@@ -243,7 +243,6 @@ html {
   border-radius: 4px; 
   cursor: pointer; 
   transition: background-color 0.3s;
-  background-image: linear-gradient(to left, rgb(55,28,37), rgb(79,36,36), rgb(210, 111,66)); 
 }
 
 
@@ -259,7 +258,7 @@ nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image:linear-gradient(to right, rgb(53,61,110), rgb(48,41,73), rgb(68,45,67)); 
+  background-image:linear-gradient(to left, #4E4266, #57364B); 
   border-radius: 0.5;
 }
 
@@ -319,7 +318,7 @@ only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi), 
 only screen and (min-resolution: 2dppx) {
   body {
-    background-image: linear-gradient(5deg, #B6573C, #FED476, #603A4F);
+    background-image: linear-gradient(189deg,#603B4F, #8E4E59, #BC5F5A, #DD7455, #EB8350, #FBAA51, #FED476, #FFC570, #F2AC64, #CE854B, #E38242, #C86542, #B2563E);
       
     background-repeat: no-repeat;
     background-size: cover;
