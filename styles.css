@@ -258,7 +258,7 @@ nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: linear-gradient(0deg, #4E4266, #57364B); 
+  background-image: linear-gradient(90deg, #4E4266, #57364B); 
   border-radius: 0.5rem;
 }
 
