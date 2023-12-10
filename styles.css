@@ -22,9 +22,12 @@ ul {
   list-style-type: none;
 }
 
+.card {
+  background-color: rgba(250, 250, 250, 0.65);
+  position: relative;
+}
 
 .card, nav ul {
-  background-color: rgba(250, 250, 250, 0.65);
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
@@ -136,23 +139,71 @@ html {
   }
 }
 
-.skill:hover img {
-  animation: wiggle 1s ease-in-out;
+@keyframes rotated-wiggle {
+  0% {
+    transform: rotate(50deg);
+  }
+  10% {
+    transform: rotate(40deg);
+  }
+  20% {
+    transform: rotate(49deg);
+  }
+  30% {
+    transform: rotate(41deg);
+  }
+  40% {
+    transform: rotate(48deg);
+  }
+  50% {
+    transform: rotate(42deg);
+  }
+  60% {
+    transform: rotate(47deg);
+  }
+  70% {
+    transform: rotate(43deg);
+  }
+  80% {
+    transform: rotate(46deg);
+  }
+  90% {
+    transform: rotate(44deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
 }
+
 
 .project-card:hover {
   background-color: background-color: rgba(255, 255, 255, 1);
+}
+
+.skill img:hover , .link-to-project img:hover, #card-expansion-icon:hover {
+  animation: wiggle 1s ease-in-out;
+}
+
+#card-expansion-icon.opened:hover {
+  animation: rotated-wiggle 1s ease-in-out;
 }
 
 .social-media-link:hover img {
   animation: wiggle 1s ease-in-out;
 }
 
-.link-to-project img {
-  display: inline;
-  height: 1rem;
+
+#card-expansion-icon, .link-to-project > img{
+  height: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  transition: transform .33s ease-in-out;
 }
 
+#card-expansion-icon.opened {
+  transform: rotate(45deg);
+}
 
 .contact-card form {
   display: grid; /* Use grid for layout */
@@ -203,7 +254,7 @@ nav ul {
   justify-content: space-around;
   align-items: center;
   background-image:linear-gradient(to right, rgb(53,61,110), rgb(48,41,73), rgb(68,45,67)); 
-  border-radius: 5px;
+  border-radius: 0.5;
 }
 
 nav ul li a {
@@ -245,4 +296,19 @@ nav ul li a {
       flex-direction: column;
       width: 100%;
   }
+}
+
+.additional-content {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+
+
+
+#about {
+  position:relative;
 }

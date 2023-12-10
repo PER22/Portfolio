@@ -7,19 +7,20 @@ window.addEventListener('scroll', () => {
     body.style.backgroundPositionX = `${scrollPercentage}%`;
 });
 
+
 document.addEventListener('DOMContentLoaded', (event) => {
-    const elements = document.querySelectorAll('.header-card, .about-card, .project-card, .skill-category, .contact-card');
-    const windowHeight = window.innerHeight;
+    
 
     function isInView(el) {
         const rect = el.getBoundingClientRect();
         return (
-            rect.top <= windowHeight &&
+            rect.top <= window.innerHeight &&
             rect.bottom >= 0
         );
     }
 
     function checkPosition() {
+        const elements = document.querySelectorAll('.card, .skill-category');
         for (let i = 0; i < elements.length; i++) {
             if (isInView(elements[i])) {
                 elements[i].classList.add('in-view');
@@ -31,7 +32,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     window.addEventListener('scroll', checkPosition);
+
+    document.querySelector("#card-expansion-icon").addEventListener("click", (event) => {
+        let additionalParagraphs = document.querySelectorAll(".additional-content");
+        for (let eachParagraph of additionalParagraphs) {
+            eachParagraph.classList.toggle("show");
+        }
+        event.target.classList.toggle("opened");
+        setTimeout(checkPosition,50);
+    })
+
     checkPosition();
+
 });
 
 
@@ -49,3 +61,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
     getProfilePicURL();
 
 });
+
