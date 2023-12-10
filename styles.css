@@ -320,8 +320,8 @@ only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
   body {
     background-image: 
-      linear-gradient(45deg, #403A5E, #FDDF63, #431D22), /* Red to orange to yellow diagonal gradient */
-      linear-gradient(0deg, #593F5A, #F9A43F, #AC5856); /* Blue to purple vertical gradient */
+      linear-gradient(5deg, #603A4F, #FED476, #B6573C),
+      
     background-repeat: no-repeat;
     background-size: cover;
   }
