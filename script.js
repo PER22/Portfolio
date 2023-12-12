@@ -32,16 +32,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     window.addEventListener('scroll', checkPosition);
-
-    document.querySelector("#card-expansion-icon").addEventListener("click", (event) => {
-        let additionalParagraphs = document.querySelectorAll(".additional-content");
-        for (let eachParagraph of additionalParagraphs) {
-            eachParagraph.classList.toggle("show");
-        }
-        event.target.classList.toggle("opened");
-        setTimeout(checkPosition,50);
-    })
-
     checkPosition();
 
 });
