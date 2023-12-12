@@ -36,13 +36,13 @@ body::before {
 
 /* Apply blur when the screen is narrow */
 @media only screen and (max-width: 768px) {
-  body::before {
+  /* body::before {
     -webkit-filter: blur(50px);
     -moz-filter: blur(50px);
     -o-filter: blur(50px);
     -ms-filter: blur(50px);
     filter: blur(50px);
-  }
+  } */
 }
 
 .social-media-logo {
