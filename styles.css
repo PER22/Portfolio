@@ -10,8 +10,37 @@
 
 :root { background-attachment: fixed; }
 
-body{
+body {
+  position: relative;
+  
   background-color: black;
+  text-decoration: none;
+  color: black;
+  font-family: Garamond, Helvetica, sans-serif;
+}
+
+/* Regular background for larger screens */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url("./assets/images/sunset-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0%;
+}
+
+/* Apply blur when the screen is narrow */
+@media only screen and (max-width: 768px) {
+  body::before {
+    -webkit-filter: blur(50px);
+    -moz-filter: blur(50px);
+    -o-filter: blur(50px);
+    -ms-filter: blur(50px);
+    filter: blur(50px);
+  }
 }
 
 .social-media-logo {
@@ -247,14 +276,14 @@ html {
 }
 
 .contact-card form {
-  display: grid; /* Use grid for layout */
-  grid-gap: 10px; /* Space between grid items */
+  display: grid; 
+  grid-gap: 10px;
 }
 
 .contact-card label {
-  display: block; /* Make labels block elements */
-  margin-bottom: 5px; /* Space below each label */
-  color: #555; /* Slightly lighter grey for the label text */
+  display: block; 
+  margin-bottom: 5px; 
+  color: #555; 
 }
 
 /* Style the input fields */
@@ -326,9 +355,6 @@ nav ul li a {
   display: block;
 }
 
-
-
-
 #about {
   position:relative;
 }
@@ -345,18 +371,3 @@ nav ul li a {
 
 
 
-@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
-       only screen and (max-width: 768px) and (min--moz-device-pixel-ratio: 2),
-       only screen and (max-width: 768px) and (-o-min-device-pixel-ratio: 2/1),
-       only screen and (max-width: 768px) and (min-device-pixel-ratio: 2),
-       only screen and (max-width: 768px) and (min-resolution: 192dpi),
-       only screen and (max-width: 768px) and (min-resolution: 2dppx) {
-    body {
-        background-image: linear-gradient(189deg, #603B4F, #8E4E59, #BC5F5A, #DD7455, #EB8350, #FBAA51, #FED476, #FFC570, #F2AC64, #CE854B, #E38242, #C86542, #B2563E);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-}
-
-.img-container img { opacity: 100%;}
