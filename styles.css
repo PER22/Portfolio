@@ -7,36 +7,37 @@
     padding: 20px;
   }
 }
-
-:root { background-attachment: fixed; }
-
 body {
   position: relative;
-  
   background-color: black;
   text-decoration: none;
   color: black;
   font-family: Garamond, Helvetica, sans-serif;
-}
-
-/* Regular background for larger screens */
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  /* z-index: -1; */
   background-image: url("./assets/images/sunset-background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  
+  background-attachment: fixed; /* This will be for desktop */
 }
 
 /* Apply blur when the screen is narrow */
 @media only screen and (max-width: 430px) {
+  body {
+    background-image: none; /* Remove the background image from body */
+  }
+
   body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    background-image: url("./assets/images/sunset-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
     -webkit-filter: blur(50px);
     -moz-filter: blur(50px);
     -o-filter: blur(50px);
@@ -138,16 +139,6 @@ backdrop-filter: blur(3.2px);
   margin-bottom: 10px;
 }
 
-body {
-  background-image: url("./assets/images/sunset-background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0%;
-  background-attachment: fixed;
-  text-decoration: none;
-  color: black;
-  font-family: Garamond, Helvetica, sans-serif;
-}
 
 .header-card,
 .about-card,
