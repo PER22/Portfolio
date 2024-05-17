@@ -1,22 +1,21 @@
 window.addEventListener('scroll', () => {
     const background = document.getElementById('background');
     const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-    let scrollPercentage = (window.scrollY / maxScroll) * 100;
-    if (scrollPercentage > 100) { scrollPercentage = 100; }
-    else if (scrollPercentage < 0) { scrollPercentage = 0; }
+    let scrollPercentage = Math.max(Math.min((window.scrollY / maxScroll) * 100, 100), 0);
     background.style.backgroundPositionX = `${scrollPercentage}%`;
 });
 
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    
+
 
     function isInView(el) {
         const rect = el.getBoundingClientRect();
-        return (
-            rect.top <= window.innerHeight &&
-            rect.bottom >= 0
-        );
+        const windowHeight = window.innerHeight;
+        const elementHeight = rect.bottom - rect.top;
+        let visibleHeight = Math.min(rect.bottom, windowHeight) - Math.max(rect.top, 0);
+        visibleHeight = Math.max(0, visibleHeight);
+        return (visibleHeight / elementHeight) >= 0.5;
     }
 
     function checkPosition() {

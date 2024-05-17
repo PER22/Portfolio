@@ -52,6 +52,10 @@
 .social-media-logo {
   height: 1.5rem;
   vertical-align: middle;
+  background-color: rgba(40, 40, 40, .5);
+  padding: 0.45rem;
+  border-radius: 0.25rem;
+
 }
 
 main {
@@ -69,7 +73,7 @@ body{
   background-color: black;
 }
 .card {
-  background-color: rgba(250, 250, 250, 0.65);
+  background-color: rgba(255, 250, 250, 0.35);
   position: relative;
   padding: 1rem;
   backdrop-filter: blur(3.2px);
@@ -159,7 +163,7 @@ backdrop-filter: blur(3.2px);
 
 .in-view {
   opacity: 1;
-  animation: fadeIn 0.3s ease-in-out;
+  animation: fadeIn 0.25s ease-in-out;
 }
 
 #profile-picture {
@@ -247,7 +251,7 @@ html {
 
 
 .project-card:hover {
-  background-color: background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .skill img:hover , .link-to-project img:hover, #card-expansion-icon:hover {
@@ -275,50 +279,11 @@ html {
   transform: rotate(45deg);
 }
 
-.contact-card form {
-  display: grid; 
-  grid-gap: 10px;
-}
-
-.contact-card label {
-  display: block; 
-  margin-bottom: 5px; 
-  color: #555; 
-}
-
-/* Style the input fields */
-.contact-card input[type="text"],
-.contact-card input[type="email"],
-.contact-card textarea {
-  width: 100%; /* Full width */
-  padding: 8px; /* Padding inside the inputs */
-  border: 1px solid #ccc; /* Light grey border */
-  border-radius: 4px; /* Slightly rounded borders for inputs */
-  box-sizing: border-box; /* Border box sizing */
-}
-
-/* Style the submit button */
-.contact-card button[type="submit"] {
-  background-image: linear-gradient(180deg, #D67458, #8E4641);
-  box-shadow: 1px 1px 3px  rgba(0,0,0,.3); 
-  color: white; 
-  padding: 10px 15px; 
-  border: none; 
-  border-radius: 4px; 
-  cursor: pointer; 
-  transition: background-color 0.3s;
-}
-
-
-
-.contact-card button[type="submit"]:active {
-  box-shadow: inset 1px 1px 3px  rgba(0,0,0,.3); 
- }
 
 /* General Navigation Style */
 nav ul {
   list-style-type: none;
-  padding: ;
+  padding: 1rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
