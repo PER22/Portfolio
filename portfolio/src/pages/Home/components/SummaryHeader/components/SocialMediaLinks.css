@@ -1,0 +1,33 @@
+#social-media-container {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+}
+.social-media-logo {
+    height: 1.5rem;
+    vertical-align: middle;
+    padding: 0.65rem;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.25s ease-in-out 0s;
+    box-shadow:
+      3px 3px 10px 0 rgba(0, 0, 0, 0.25),
+      -3px -3px 10px 0 rgba(255, 255, 255, 0.25),
+      -3px -3px 10px inset rgba(0, 0, 0, 0.25),
+      3px 3px 10px inset rgba(255, 255, 255, 0.25);
+  }
+  
+
+  .social-media-logo:hover {
+    box-shadow:
+    3px 3px 10px 0 rgba(0, 0, 0, 0.25),
+    -3px -3px 10px 0 rgba(255, 255, 255, 0.25);
+  }
+
+  .social-media-logo:active {
+    box-shadow:
+    -3px -3px 10px 0 rgba(0, 0, 0, 0.25),
+    3px 3px 10px 0 rgba(255, 255, 255, 0.25),
+    3px 3px 10px inset rgba(0, 0, 0, 0.25),
+    -3px -3px 10px inset rgba(255, 255, 255, 0.25);
+  }

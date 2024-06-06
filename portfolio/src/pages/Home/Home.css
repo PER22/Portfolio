@@ -1,0 +1,184 @@
+/* * {
+    border: 1px solid red;
+} */
+
+.card {
+    position: relative;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    opacity: 0;
+    box-shadow: none;
+}
+
+.card.in-view {
+    opacity: 1;
+    box-shadow:
+        4px 4px 15px rgba(0, 0, 0, 0.35),
+        -4px -4px 15px rgba(255, 255, 255, 0.30);
+    transition: box-shadow 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.card.in-view, .card.in-view .skill {
+    opacity: 1;
+    box-shadow:
+        4px 4px 15px rgba(0, 0, 0, 0.35),
+        -4px -4px 15px rgba(255, 255, 255, 0.30);
+    transition: box-shadow 0.5s ease-in-out 0.25s, opacity 0.5s ease-in-out;
+}
+
+.card.out-view, .card.out-view .skill{
+    opacity: 0;
+    box-shadow: none;
+    transition: box-shadow 0.5s ease-in-out, opacity 0.5s ease-in-out 0.25s; 
+}
+
+.card h3 {
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: .75rem;
+    width: max-content;
+}
+.card.in-view h3 {
+    box-shadow:
+        4px 4px 15px inset rgba(0, 0, 0, 0.35),
+        -4px -4px 15px inset rgba(255, 255, 255, 0.30);
+}
+
+.card.in-view * {
+    opacity: 1;
+    
+    transition: box-shadow 0.5s ease-in-out 0.5s, opacity 0.5s ease-in-out;
+}
+
+.card.out-view * {
+    opacity: 0;
+    box-shadow: none;
+    transition: box-shadow 0.5s ease-in-out, opacity 0.5s ease-in-out 0.5s; 
+}
+
+
+#skills > div > div > h3 {
+    width:max-content;
+    padding: .75rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+
+
+
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 1.25rem;
+}
+
+
+.skill {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    padding:1rem;
+}
+
+.skill img {
+    height: 3rem;
+    margin-bottom: 10px;
+}
+
+
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(5deg);
+    }
+
+    10% {
+        transform: rotate(-5deg);
+    }
+
+    20% {
+        transform: rotate(4deg);
+    }
+
+    30% {
+        transform: rotate(-4deg);
+    }
+
+    40% {
+        transform: rotate(3deg);
+    }
+
+    50% {
+        transform: rotate(-3deg);
+    }
+
+    60% {
+        transform: rotate(2deg);
+    }
+
+    70% {
+        transform: rotate(-2deg);
+    }
+
+    80% {
+        transform: rotate(1deg);
+    }
+
+    90% {
+        transform: rotate(-1deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotated-wiggle {
+    0% {
+        transform: rotate(50deg);
+    }
+
+    10% {
+        transform: rotate(40deg);
+    }
+
+    20% {
+        transform: rotate(49deg);
+    }
+
+    30% {
+        transform: rotate(41deg);
+    }
+
+    40% {
+        transform: rotate(48deg);
+    }
+
+    50% {
+        transform: rotate(42deg);
+    }
+
+    60% {
+        transform: rotate(47deg);
+    }
+
+    70% {
+        transform: rotate(43deg);
+    }
+
+    80% {
+        transform: rotate(46deg);
+    }
+
+    90% {
+        transform: rotate(44deg);
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}
