@@ -1,0 +1,131 @@
+
+.skill-card {
+    margin-bottom: 2rem;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+#skills > div > div > h3 {
+    width:max-content;
+    padding: .75rem;
+    border-radius: 1rem;
+    margin-left: -.5rem;
+    margin-top: -.5rem;
+}
+
+
+
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 1.25rem;
+}
+
+
+.skill {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    padding:1rem;
+}
+
+.skill img {
+    height: 3rem;
+    margin-bottom: 10px;
+}
+
+
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(5deg);
+    }
+
+    10% {
+        transform: rotate(-5deg);
+    }
+
+    20% {
+        transform: rotate(4deg);
+    }
+
+    30% {
+        transform: rotate(-4deg);
+    }
+
+    40% {
+        transform: rotate(3deg);
+    }
+
+    50% {
+        transform: rotate(-3deg);
+    }
+
+    60% {
+        transform: rotate(2deg);
+    }
+
+    70% {
+        transform: rotate(-2deg);
+    }
+
+    80% {
+        transform: rotate(1deg);
+    }
+
+    90% {
+        transform: rotate(-1deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotated-wiggle {
+    0% {
+        transform: rotate(50deg);
+    }
+
+    10% {
+        transform: rotate(40deg);
+    }
+
+    20% {
+        transform: rotate(49deg);
+    }
+
+    30% {
+        transform: rotate(41deg);
+    }
+
+    40% {
+        transform: rotate(48deg);
+    }
+
+    50% {
+        transform: rotate(42deg);
+    }
+
+    60% {
+        transform: rotate(47deg);
+    }
+
+    70% {
+        transform: rotate(43deg);
+    }
+
+    80% {
+        transform: rotate(46deg);
+    }
+
+    90% {
+        transform: rotate(44deg);
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}

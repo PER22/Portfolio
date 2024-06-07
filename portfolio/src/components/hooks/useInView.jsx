@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const useInView = () => {
+const useInView = (query) => {
   useEffect(() => {
     const isInView = (el) => {
       const rect = el.getBoundingClientRect();
@@ -12,7 +12,7 @@ const useInView = () => {
     };
 
     const checkPosition = () => {
-      const elements = document.querySelectorAll('.card, .skill-category');
+      const elements = document.querySelectorAll(query);
       elements.forEach(element => {
         if (isInView(element)) {
           element.classList.add('in-view');

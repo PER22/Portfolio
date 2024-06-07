@@ -160,6 +160,9 @@ nav ul li a {
 #name-and-headshot {
   display: flex;
   margin-bottom: .5rem;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 #name {

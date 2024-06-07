@@ -10,6 +10,7 @@
     -8px -8px 15px rgba(255, 255, 255, 0.35);
     margin: 0.5rem;
 }
+.header-card {margin-bottom: 2rem;}
 
 .card.in-view h1 {
   box-shadow:
@@ -24,6 +25,4 @@
 
 .card.out-of-view h1 {
   box-shadow: none;
-  padding: .5rem;
-  border-radius: 1rem;
 }

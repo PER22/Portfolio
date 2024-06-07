@@ -2,16 +2,26 @@ import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './Portfolio.css'
 import Home from '../Home/Home'
+import About from '../About/About'
+import NavBar from '../../components/Navigation/NavBar'
+import CopyrightNotice from '../../components/CopyrightNotice/CopyrightNotice'
 
 function Portfolio() {
 
   return (
     <>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        {/* <Route path='/about' element={<Home />} /> */}
-        {/* <Route path='/projects' element={<Home />} /> */}
-      </Routes>
+      <div className="content-container">
+        <NavBar />
+        <main>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            {/* <Route path='/projects' element={<Home />} /> */}
+          </Routes>
+        </main>
+
+        <CopyrightNotice />
+      </div>
 
 
     </>
