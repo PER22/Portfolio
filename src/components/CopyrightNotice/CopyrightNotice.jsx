@@ -1,3 +1,4 @@
+import './CopyrightNotice.css'
 export default function CopyrightNotice(){
     return (
         <footer>

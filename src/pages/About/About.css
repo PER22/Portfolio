@@ -2,3 +2,13 @@
     margin-bottom: 1rem;
     padding: 1rem 1rem 1rem 1rem;
 }
+.card.in-view h3 {
+    box-shadow:
+        4px 4px 15px inset rgba(0, 0, 0, 0.25),
+        -4px -4px 15px inset rgba(255, 255, 255, 0.25);
+    width: max-content;
+    margin-top: -.5rem;
+    margin-left: -.5rem;
+    padding: .75rem;
+    border-radius: 1rem;
+}
