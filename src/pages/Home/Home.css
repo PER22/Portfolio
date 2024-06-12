@@ -1,33 +1,18 @@
-.card {
-    position: relative;
-    padding: 1rem 1rem 1rem 1rem;
-    border-radius: 1rem;
-    opacity: 0;
-    box-shadow: none;
-}
-
-
-.card.in-view {
+.card.in-view .skill {
     opacity: 1;
     box-shadow:
         4px 4px 15px rgba(0, 0, 0, 0.35),
         -4px -4px 15px rgba(255, 255, 255, 0.30);
-    transition: box-shadow 0.25s ease-in-out, opacity 0.25s ease-in-out;
+    transition: box-shadow 0.33s ease-in-out .5s, opacity 0.33s ease-in-out;
 }
 
-.card.in-view, .card.in-view .skill {
-    opacity: 1;
-    box-shadow:
-        4px 4px 15px rgba(0, 0, 0, 0.35),
-        -4px -4px 15px rgba(255, 255, 255, 0.30);
-    transition: box-shadow 0.25s ease-in-out, opacity 0.25s ease-in-out;
-}
-
-.card.out-view, .card.out-view .skill{
+.card.out-view .skill{
     opacity: 0;
     box-shadow: none;
-    transition: box-shadow 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+    transition: box-shadow 0.33s ease-in-out .5s, opacity 0.33s ease-in-out 0.5s; 
 }
+
+
 
 
 .card.in-view h3 {
@@ -36,14 +21,18 @@
         -4px -4px 15px inset rgba(255, 255, 255, 0.25);
 }
 
-.card.in-view * {
-    opacity: 1;
-    transition: box-shadow 0.25s ease-in-out, opacity 0.25s ease-in-out;
-}
 
-.card.out-view * {
-    opacity: 0;
-    box-shadow: none;
-    transition: box-shadow 0.25s ease-in-out, opacity 0.25s ease-in-out; 
-}
 
+
+
+#about-link:hover {
+    background-color: rgb(53, 61, 110);
+  }
+  
+  #projects-link:hover {
+    background-color: rgb(48, 41, 73);
+  }
+  
+  #contact-link:hover {
+    background-color: rgb(68, 45, 67);
+  }

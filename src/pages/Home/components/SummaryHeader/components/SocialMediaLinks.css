@@ -9,7 +9,7 @@
     vertical-align: middle;
     padding: 0.65rem;
     border-radius: 0.5rem;
-    transition: box-shadow 0.25s ease-in-out 0s;
+    transition: box-shadow 0.33s ease-in-out;
     box-shadow:
       3px 3px 10px 0 rgba(0, 0, 0, 0.25),
       -3px -3px 10px 0 rgba(255, 255, 255, 0.25),

@@ -8,7 +8,7 @@
 }
 
 main {
-  display: flex; 
+  display: flex;
   flex-direction: column;
 }
 
@@ -20,11 +20,12 @@ body {
   text-decoration: none;
   color: rgb(250, 250, 250);
   font-family: Garamond, Helvetica, sans-serif;
-  background-color: #3f704c;
-  margin:0;
+  margin: 0;
 }
 
-a {color: white;}
+a {
+  color: white;
+}
 
 
 
@@ -53,19 +54,15 @@ nav ul {
 
 
 
-
-#card-expansion-icon,
 .link-to-project>img {
   height: 1.5rem;
   position: absolute;
   top: 1rem;
   right: 1rem;
   transition: transform .33s ease-in-out;
+  border-radius: 0%;
 }
 
-#card-expansion-icon.opened {
-  transform: rotate(45deg);
-}
 
 nav ul {
   list-style-type: none;
@@ -76,18 +73,42 @@ nav ul {
   border-radius: 0.5rem;
 }
 
-
-
-#about-link:hover {
-  background-color: rgb(53, 61, 110);
+body {
+  transition: background-color 0.5s ease-in-out;
 }
 
-#projects-link:hover {
-  background-color: rgb(48, 41, 73);
+.card {
+  position: relative;
+  padding: 1rem;
+  border-radius: 1rem;
+  opacity: 0;
+  box-shadow: none;
+  margin-bottom: 2rem;
 }
 
-#contact-link:hover {
-  background-color: rgb(68, 45, 67);
+.card.in-view {
+  opacity: 1;
+  box-shadow:
+    4px 4px 15px rgba(0, 0, 0, 0.35),
+    -4px -4px 15px rgba(255, 255, 255, 0.30);
+  transition: box-shadow 0.33s ease-in-out .5s, opacity 0.33s ease-in-out;
+}
+
+.card.in-view * {
+  opacity: 1;
+  transition: box-shadow 0.33s ease-in-out .5s, opacity 0.33s ease-in-out;
+}
+
+.card.out-view {
+  opacity: 0;
+  box-shadow: none;
+  transition: box-shadow 0.33s ease-in-out, opacity 0.33s ease-in-out .5s;
+}
+
+.card.out-view * {
+  opacity: 0;
+  box-shadow: none;
+  transition: box-shadow 0.33s ease-in-out, opacity 0.33s ease-in-out .5s;
 }
 
 .project-info {
